@@ -6,9 +6,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-connectDB();
 const PORT = process.env.PORT || 3000;
 
+connectDB();
+
+// Middleware
+app.use(express.json());
 app.use("/api/notes", notesRoutes);
 
 app.listen(PORT, () => {
