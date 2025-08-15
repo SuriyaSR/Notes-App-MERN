@@ -2,7 +2,7 @@
 const CreatePage = () => {
   return (
     <div>
-      CreatePage
+        Create Note Page
     </div>
   )
 }

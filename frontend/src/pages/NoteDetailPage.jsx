@@ -2,7 +2,7 @@
 const NoteDetailPage = () => {
   return (
     <div>
-      NoteDetailPage
+      Note Detail Page
     </div>
   )
 }

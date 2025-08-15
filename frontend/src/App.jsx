@@ -1,16 +1,20 @@
-import { Route, Routes } from "react-router"
-import HomePage from "./pages/HomePage.jsx"
-import NoteDetailPage from "./pages/NoteDetailPage.jsx"
-import CreatePage from "./pages/CreatePage.jsx"
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage.jsx'
+import CreatePage from './pages/CreatePage.jsx'
+import NoteDetailPage from './pages/NoteDetailPage.jsx'
 
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Routes>
+    <div data-theme="forest" className="min-h-screen">
+      <button className="btn btn-active btn-success">Success</button>
+      <button className="btn btn-active btn-warning">Warning</button>
+      <button className="btn btn-active btn-error">Error</button>
+     <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/create" element={<CreatePage/>} />
-        <Route path="/note/:id" element={<NoteDetailPage/>} />        
+        <Route path="/create" element={<CreatePage />} />
+        <Route path="/note/:id" element={<NoteDetailPage />} />      
       </Routes>
     </div>
   )
