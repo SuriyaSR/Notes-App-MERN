@@ -8,10 +8,7 @@ import NoteDetailPage from './pages/NoteDetailPage.jsx'
 function App() {
   return (
     <div data-theme="forest" className="min-h-screen">
-      <button className="btn btn-active btn-success">Success</button>
-      <button className="btn btn-active btn-warning">Warning</button>
-      <button className="btn btn-active btn-error">Error</button>
-     <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetailPage />} />      
