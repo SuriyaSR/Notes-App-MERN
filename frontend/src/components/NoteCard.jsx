@@ -8,8 +8,6 @@ import api from "../lib/axios"
 const NoteCard = ({note, setNotes}) => {
   const handleDelete = async(e, id) => {
     e.preventDefault();
-    // Implement delete functionality here
-    // console.log('Delete note with id:', id);
 
     if(!window.confirm("Are you sure you want to delete this note?"))
       return;
