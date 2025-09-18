@@ -47,7 +47,7 @@ A full-stack Notes App built with the MERN stack — MongoDB, Express, React (Vi
 ### 1. Clone the repo
 
 ```bash
-  git clone <this-repository-url>
+  git clone https://github.com/SuriyaSR/Notes-App-MERN.git
   cd <main folder of the project>
 ```
 
